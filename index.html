@@ -62,6 +62,50 @@
   <header>
     
       <div class="icon"></div>
+      <a href="/2014/10/29/php-session理解/">
+  <time datetime="2014-10-29T09:02:11.000Z">
+    10月 29 2014
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2014/10/29/php-session理解/">session,cookie的区别</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h3 id="存储位置不同">存储位置不同</h3>
+<ul>
+<li>session是存储在服务器的</li>
+<li>cookie是存储在客户端的</li>
+</ul>
+<h3 id="原理不同">原理不同</h3>
+<ul>
+<li>cookie机制采用的是在客户端保持状态的方案，它是在用户端的会话状态的存贮机制，他需要用户打开客户端的cookie支持，cookie的作用就是为了解决http协议无状态的缺陷所作的努力。</li>
+<li>session是针对每一个用户的，变量的值保存在服务器上，用一个sessionID来区分是哪个用户session变量，这个值是通过用户的浏览器在访问的时候返回给服务器，当客户禁用cookie时，这个值也可能设置为由get来返回给服务器</li>
+</ul>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
       <a href="/2014/10/29/git使用/">
   <time datetime="2014-10-29T08:38:41.000Z">
     10月 29 2014
