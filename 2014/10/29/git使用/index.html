@@ -4,39 +4,51 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
-  <title>Hexo常用命令 | Charle-Chen的博客</title>
+  <title>git使用 | Charle-Chen的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
     <meta name="author" content="Charle-Chen">
   
   
-    <meta name="description" content="到这里，我们已经了解了如何配置一个hexo博客，并且通过测试
+    <meta name="description" content="这篇文章记录我在使用git的过程中碰到远程分支和tag的相关内容，提纲：
 
-hexo n ‘name’ #建立新的博文hexo g #hexo generate 生成对应的html,css,js文件hexo s #hexo server 启动服务hexo d #hexo deploy 布置到git上去
-
-几个常见命令用来新建，更新，预览，同步到git pages博客">
+查看远程分支
+删除远程分支和tag
+删除不存在对应远程分支的本地分支
+重命名远程分支
+把本地tag推送到远程
+获取远程tag">
   
-  <meta name="description" content="到这里，我们已经了解了如何配置一个hexo博客，并且通过测试
+  <meta name="description" content="这篇文章记录我在使用git的过程中碰到远程分支和tag的相关内容，提纲：
 
-hexo n ‘name’ #建立新的博文hexo g #hexo generate 生成对应的html,css,js文件hexo s #hexo server 启动服务hexo d #hexo deploy 布置到git上去
-
-几个常见命令用来新建，更新，预览，同步到git pages博客">
+查看远程分支
+删除远程分支和tag
+删除不存在对应远程分支的本地分支
+重命名远程分支
+把本地tag推送到远程
+获取远程tag">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo常用命令">
-<meta property="og:url" content="http://yoursite.com/2014/10/28/hexo1/">
+<meta property="og:title" content="git使用">
+<meta property="og:url" content="http://yoursite.com/2014/10/29/git使用/">
 <meta property="og:site_name" content="Charle-Chen的博客">
-<meta property="og:description" content="到这里，我们已经了解了如何配置一个hexo博客，并且通过测试
+<meta property="og:description" content="这篇文章记录我在使用git的过程中碰到远程分支和tag的相关内容，提纲：
 
-hexo n ‘name’ #建立新的博文hexo g #hexo generate 生成对应的html,css,js文件hexo s #hexo server 启动服务hexo d #hexo deploy 布置到git上去
-
-几个常见命令用来新建，更新，预览，同步到git pages博客">
+查看远程分支
+删除远程分支和tag
+删除不存在对应远程分支的本地分支
+重命名远程分支
+把本地tag推送到远程
+获取远程tag">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo常用命令">
-<meta name="twitter:description" content="到这里，我们已经了解了如何配置一个hexo博客，并且通过测试
+<meta name="twitter:title" content="git使用">
+<meta name="twitter:description" content="这篇文章记录我在使用git的过程中碰到远程分支和tag的相关内容，提纲：
 
-hexo n ‘name’ #建立新的博文hexo g #hexo generate 生成对应的html,css,js文件hexo s #hexo server 启动服务hexo d #hexo deploy 布置到git上去
-
-几个常见命令用来新建，更新，预览，同步到git pages博客">
+查看远程分支
+删除远程分支和tag
+删除不存在对应远程分支的本地分支
+重命名远程分支
+把本地tag推送到远程
+获取远程tag">
 
   
   
@@ -74,26 +86,30 @@ hexo n ‘name’ #建立新的博文hexo g #hexo generate 生成对应的html,c
   <header>
     
       <div class="icon"></div>
-      <a href="/2014/10/28/hexo1/">
-  <time datetime="2014-10-28T05:32:20.000Z">
-    10月 28 2014
+      <a href="/2014/10/29/git使用/">
+  <time datetime="2014-10-29T08:38:41.000Z">
+    10月 29 2014
   </time>
 </a>
     
     
   
-    <h1 class="title">Hexo常用命令</h1>
+    <h1 class="title">git使用</h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>到这里，我们已经了解了如何配置一个hexo博客，并且通过测试</p>
-<blockquote>
-<p>hexo n ‘name’ #建立新的博文<br>hexo g #hexo generate 生成对应的html,css,js文件<br>hexo s #hexo server 启动服务<br>hexo d #hexo deploy 布置到git上去</p>
-</blockquote>
-<p>几个常见命令用来新建，更新，预览，同步到git pages博客</p>
+      <h3 id="这篇文章记录我在使用git的过程中碰到远程分支和tag的相关内容，提纲：">这篇文章记录我在使用git的过程中碰到远程分支和tag的相关内容，提纲：</h3>
+<ul>
+<li>查看远程分支</li>
+<li>删除远程分支和tag</li>
+<li>删除不存在对应远程分支的本地分支</li>
+<li>重命名远程分支</li>
+<li>把本地tag推送到远程</li>
+<li>获取远程tag</li>
+</ul>
 
     
   </div>
@@ -101,12 +117,12 @@ hexo n ‘name’ #建立新的博文hexo g #hexo generate 生成对应的html,c
     
       
   <div class="categories">
-    <a class="categories-link" href="/categories/nodejs/">nodejs</a>
+    <a class="categories-link" href="/categories/git/">git</a>
   </div>
 
       
   <div class="tags">
-    <a class="tags-link" href="/tags/hexo/">hexo</a>
+    <a class="tags-link" href="/tags/git/">git</a>
   </div>
 
     
@@ -117,10 +133,8 @@ hexo n ‘name’ #建立新的博文hexo g #hexo generate 生成对应的html,c
 
 <nav id="pagination" >
     
-    <a href="/2014/10/29/git使用/" class="alignleft prev" >上一页</a>
     
-    
-    <a href="/2014/10/27/blog/" class="alignright next" >下一页</a>
+    <a href="/2014/10/28/hexo1/" class="alignright next" >下一页</a>
     
     <div class="clearfix"></div>
 </nav>
