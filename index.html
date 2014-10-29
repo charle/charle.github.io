@@ -77,7 +77,7 @@
   
   <div class="entry">
     
-      <h3 id="这篇文章记录我在使用git的过程中碰到远程分支和tag的相关内容，提纲：">这篇文章记录我在使用git的过程中碰到远程分支和tag的相关内容，提纲：</h3>
+      <h3 id="提纲">提纲</h3>
 <ul>
 <li>查看远程分支</li>
 <li>删除远程分支和tag</li>
@@ -86,6 +86,15 @@
 <li>把本地tag推送到远程</li>
 <li>获取远程tag</li>
 </ul>
+<h3 id="查看远程分支">查看远程分支</h3>
+<p>加上-a参数可以查看远程分支，远程分支会用红色表示出来<br><code>git branch -a</code></p>
+<h3 id="删除远程分支和tag">删除远程分支和tag</h3>
+<p>在git v1.7.0之后，可以使用这种语法删除远程分支<br><code>git push origin --delete branchName</code></p>
+<p>删除tag可以这么用<br><code>git push origin --delete tag tagName</code></p>
+<h3 id="把本地tag推送到远程">把本地tag推送到远程</h3>
+<p><code>git push --tags</code></p>
+<h3 id="获取远程tag">获取远程tag</h3>
+<p><code>git fetch origin tag tagName</code></p>
 
     
   </div>
@@ -160,8 +169,9 @@
   <div class="entry">
     
       <p>你可能需要一个方便的工具来记录思想、整理笔记、表述观点，并且传播给更多的人。Hexo就是一个不错的工具。<br>Hexo,是一个基于Node.js的静态博客程序，可以方便的生成静态网页托管在github和Heroku上。<br>引用官方的话，hexo：</p>
-<figure class="highlight 快速、简单且功能强大的"><figcaption><span>Node.js 博客框架。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">A</span> fast, simple & powerful blog framework, powered by <span class="variable">Node</span>.js.</div></pre></td></tr></table></figure>
-
+<blockquote>
+<p>快速、简单且功能强大的 Node.js 博客框架。<br>A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
+</blockquote>
 <p>我们可以用hexo创建自己的博客，托管到github或Heroku上，绑定自己的域名，用markdown写文章。本博客即使用hexo创建并托管在github上。</p>
 <h2 id="为什么要用Hexo">为什么要用Hexo</h2>
 <blockquote>
