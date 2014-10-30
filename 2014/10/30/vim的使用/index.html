@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>vim的使用 | Charle-Chen的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <meta name="author" content="Charle-Chen">
+  
+  
+    <meta name="description" content="批量替换
+
+： %s /10.61.13.25/eth0/g #全局替换 ：s/10.61.13.25/eth0/g #当前行替换 ： 1,15 s/10.61.13.25/eth0/g #1-15替换 visual模式选择你要替换的部分s/10.61.13.25/eth0/g
+
+vim其它常用操
+
+删除命令
+d0 #删至行首
+d$ #删至行尾
+ndd #删除当前行及后n-1行
+x或X #删除一个">
+  
+  <meta name="description" content="批量替换
+
+： %s /10.61.13.25/eth0/g #全局替换 ：s/10.61.13.25/eth0/g #当前行替换 ： 1,15 s/10.61.13.25/eth0/g #1-15替换 visual模式选择你要替换的部分s/10.61.13.25/eth0/g
+
+vim其它常用操
+
+删除命令
+d0 #删至行首
+d$ #删至行尾
+ndd #删除当前行及后n-1行
+x或X #删除一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vim的使用">
+<meta property="og:url" content="http://yoursite.com/2014/10/30/vim的使用/">
+<meta property="og:site_name" content="Charle-Chen的博客">
+<meta property="og:description" content="批量替换
+
+： %s /10.61.13.25/eth0/g #全局替换 ：s/10.61.13.25/eth0/g #当前行替换 ： 1,15 s/10.61.13.25/eth0/g #1-15替换 visual模式选择你要替换的部分s/10.61.13.25/eth0/g
+
+vim其它常用操
+
+删除命令
+d0 #删至行首
+d$ #删至行尾
+ndd #删除当前行及后n-1行
+x或X #删除一个">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vim的使用">
+<meta name="twitter:description" content="批量替换
+
+： %s /10.61.13.25/eth0/g #全局替换 ：s/10.61.13.25/eth0/g #当前行替换 ： 1,15 s/10.61.13.25/eth0/g #1-15替换 visual模式选择你要替换的部分s/10.61.13.25/eth0/g
+
+vim其它常用操
+
+删除命令
+d0 #删至行首
+d$ #删至行尾
+ndd #删除当前行及后n-1行
+x或X #删除一个">
+
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+  <div class="title">
+    <h1><a href="/">Charle-Chen的博客</a></h1>
+    <p><a href="/">码农，程序猿,攻城狮</a></p>
+  </div>
+  <nav class="nav">
+    <ul>
+      
+        <li><a href="/">首页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2014/10/30/vim的使用/">
+  <time datetime="2014-10-30T11:33:08.000Z">
+    10月 30 2014
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title">vim的使用</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h3 id="批量替换">批量替换</h3>
+<blockquote>
+<p>： %s /10.61.13.25/eth0/g #全局替换<br> ：s/10.61.13.25/eth0/g #当前行替换<br> ： 1,15 s/10.61.13.25/eth0/g #1-15替换<br> visual模式选择你要替换的部分<code>s/10.61.13.25/eth0/g</code></p>
+</blockquote>
+<h3 id="vim其它常用操">vim其它常用操</h3>
+<ul>
+<li>删除命令<ul>
+<li>d0 #删至行首</li>
+<li>d$ #删至行尾</li>
+<li>ndd #删除当前行及后n-1行</li>
+<li>x或X #删除一个字符，x删除光标后的，而X删除光标前的</li>
+<li>dd #删除当前行</li>
+</ul>
+</li>
+<li>移动光标命令<ul>
+<li><code>）</code> #光标移至句尾</li>
+<li><code>（</code> #光标移至名首</li>
+<li><code>}</code> #光标移至段落开头</li>
+<li><code>{</code> #光标移到段落结尾</li>
+<li>nG # 光标移至第n行首</li>
+<li>n+ #光标下移n行</li>
+<li>n- #光标上移n行</li>
+<li>n$ #光标移至第n行尾</li>
+<li>H  #光标移到屏幕顶行</li>
+<li>M #光标移至屏幕中间行</li>
+<li>L #光标移到屏幕最后行</li>
+<li>0 #光标移至当前行首</li>
+<li>$ #光标移至当前行尾</li>
+</ul>
+</li>
+</ul>
+
+    
+  </div>
+  <footer>
+    
+      
+  <div class="categories">
+    <a class="categories-link" href="/categories/ubuntu/">ubuntu</a>
+  </div>
+
+      
+  <div class="tags">
+    <a class="tags-link" href="/tags/vim/">vim</a>
+  </div>
+
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+<nav id="pagination" >
+    
+    
+    <a href="/2014/10/29/php-session理解/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+<section id="comment">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"charle"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</section>
+
+</div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">Charle-Chen</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>
