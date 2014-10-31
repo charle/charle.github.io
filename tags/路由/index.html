@@ -62,33 +62,63 @@
 
 
   
-  
-    
-    
-      
-      
-      <section class="archives-wrapper">
-        
-        <div class="archives">
-    
     <article class="post">
   <header>
-    <a href="/2014/10/31/add-route/">
+    
+      <div class="icon"></div>
+      <a href="/2014/10/31/add-route/">
   <time datetime="2014-10-31T01:08:24.000Z">
-    10月 31
+    10月 31 2014
   </time>
 </a>
+    
     
   
     <h1 class="title"><a href="/2014/10/31/add-route/">添加路由</a></h1>
   
 
   </header>
+  
+  <div class="entry">
+    
+      <h3 id="添加路由的方法">添加路由的方法</h3>
+<ul>
+<li>sudo route add -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2<ul>
+<li>10.28.131.0 #表示destiny路由网段</li>
+<li>255.255.255.0 #表示掩码</li>
+<li>gw #网关</li>
+<li>10.61.2.2 #网关地址</li>
+</ul>
+</li>
+</ul>
+<h3 id="删除路由的方法">删除路由的方法</h3>
+<ul>
+<li>sudo route del -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2<ul>
+<li>用法类似添加路由</li>
+</ul>
+</li>
+</ul>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
 </article>
+
+
+
+  
+
+  <nav id="pagination">
   
   
-    </div></section>
-  
+  <div class="clearfix"></div>
+</nav>
 
 </div>
   </div>
