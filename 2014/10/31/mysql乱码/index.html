@@ -4,71 +4,59 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
-  <title>添加路由 | Charle-Chen的博客</title>
+  <title>mysql乱码 | Charle-Chen的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
     <meta name="author" content="Charle-Chen">
   
   
-    <meta name="description" content="添加路由的方法
+    <meta name="description" content="打开终端登陆到服务器，登陆mysql数据库,查询数据总是乱码，一开始觉得是终端编码设置有问题，没放在心上，后来网上搜了些东西，原来mysql也可以设置编码格式输出的
+mysql输出乱码命令：
 
-sudo route add -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2
-10.28.131.0 #表示destiny路由网段
-255.255.255.0 #表示掩码
-gw #网关
-10.61.2.2 #网关地址
+mysql&amp;gt; set names ‘gbk’;如果不行则可能用 set names ‘utf8’;
 
+php输出乱码命令
 
+mysql_query(“set name ‘gbk’”);
 
-删除路由的方法
-
-sudo route del -net 10.28.131.0 netmask 25">
+phpmya">
   
-  <meta name="description" content="添加路由的方法
+  <meta name="description" content="打开终端登陆到服务器，登陆mysql数据库,查询数据总是乱码，一开始觉得是终端编码设置有问题，没放在心上，后来网上搜了些东西，原来mysql也可以设置编码格式输出的
+mysql输出乱码命令：
 
-sudo route add -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2
-10.28.131.0 #表示destiny路由网段
-255.255.255.0 #表示掩码
-gw #网关
-10.61.2.2 #网关地址
+mysql&gt; set names ‘gbk’;如果不行则可能用 set names ‘utf8’;
 
+php输出乱码命令
 
+mysql_query(“set name ‘gbk’”);
 
-删除路由的方法
-
-sudo route del -net 10.28.131.0 netmask 25">
+phpmya">
 <meta property="og:type" content="article">
-<meta property="og:title" content="添加路由">
-<meta property="og:url" content="http://yoursite.com/2014/10/31/add-route/">
+<meta property="og:title" content="mysql乱码">
+<meta property="og:url" content="http://yoursite.com/2014/10/31/mysql乱码/">
 <meta property="og:site_name" content="Charle-Chen的博客">
-<meta property="og:description" content="添加路由的方法
+<meta property="og:description" content="打开终端登陆到服务器，登陆mysql数据库,查询数据总是乱码，一开始觉得是终端编码设置有问题，没放在心上，后来网上搜了些东西，原来mysql也可以设置编码格式输出的
+mysql输出乱码命令：
 
-sudo route add -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2
-10.28.131.0 #表示destiny路由网段
-255.255.255.0 #表示掩码
-gw #网关
-10.61.2.2 #网关地址
+mysql&gt; set names ‘gbk’;如果不行则可能用 set names ‘utf8’;
 
+php输出乱码命令
 
+mysql_query(“set name ‘gbk’”);
 
-删除路由的方法
-
-sudo route del -net 10.28.131.0 netmask 25">
+phpmya">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="添加路由">
-<meta name="twitter:description" content="添加路由的方法
+<meta name="twitter:title" content="mysql乱码">
+<meta name="twitter:description" content="打开终端登陆到服务器，登陆mysql数据库,查询数据总是乱码，一开始觉得是终端编码设置有问题，没放在心上，后来网上搜了些东西，原来mysql也可以设置编码格式输出的
+mysql输出乱码命令：
 
-sudo route add -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2
-10.28.131.0 #表示destiny路由网段
-255.255.255.0 #表示掩码
-gw #网关
-10.61.2.2 #网关地址
+mysql&gt; set names ‘gbk’;如果不行则可能用 set names ‘utf8’;
 
+php输出乱码命令
 
+mysql_query(“set name ‘gbk’”);
 
-删除路由的方法
-
-sudo route del -net 10.28.131.0 netmask 25">
+phpmya">
 
   
   
@@ -106,38 +94,34 @@ sudo route del -net 10.28.131.0 netmask 25">
   <header>
     
       <div class="icon"></div>
-      <a href="/2014/10/31/add-route/">
-  <time datetime="2014-10-31T01:08:24.000Z">
+      <a href="/2014/10/31/mysql乱码/">
+  <time datetime="2014-10-31T07:32:30.000Z">
     10月 31 2014
   </time>
 </a>
     
     
   
-    <h1 class="title">添加路由</h1>
+    <h1 class="title">mysql乱码</h1>
   
 
   </header>
   
   <div class="entry">
     
-      <h3 id="添加路由的方法">添加路由的方法</h3>
-<ul>
-<li>sudo route add -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2<ul>
-<li>10.28.131.0 #表示destiny路由网段</li>
-<li>255.255.255.0 #表示掩码</li>
-<li>gw #网关</li>
-<li>10.61.2.2 #网关地址</li>
-</ul>
-</li>
-</ul>
-<h3 id="删除路由的方法">删除路由的方法</h3>
-<ul>
-<li>sudo route del -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2<ul>
-<li>用法类似添加路由</li>
-</ul>
-</li>
-</ul>
+      <p>打开终端登陆到服务器，登陆mysql数据库,查询数据总是乱码，一开始觉得是终端编码设置有问题，没放在心上，后来网上搜了些东西，原来mysql也可以设置编码格式输出的</p>
+<p>mysql输出乱码命令：</p>
+<blockquote>
+<p>mysql&gt; set names ‘gbk’;如果不行则可能用 set names ‘utf8’;</p>
+</blockquote>
+<p>php输出乱码命令</p>
+<blockquote>
+<p>mysql_query(“set name ‘gbk’”);</p>
+</blockquote>
+<p>phpmyadmin里乱码</p>
+<blockquote>
+<p>phpMyAdmin的config.inc.php中有没有设置$cfg[‘DefaultCharset’]=’utf-8’;</p>
+</blockquote>
 
     
   </div>
@@ -145,12 +129,12 @@ sudo route del -net 10.28.131.0 netmask 25">
     
       
   <div class="categories">
-    <a class="categories-link" href="/categories/ubuntu/">ubuntu</a>
+    <a class="categories-link" href="/categories/mysql/">mysql</a>
   </div>
 
       
   <div class="tags">
-    <a class="tags-link" href="/tags/路由/">路由</a>
+    <a class="tags-link" href="/tags/乱码/">乱码</a>
   </div>
 
     
@@ -161,10 +145,8 @@ sudo route del -net 10.28.131.0 netmask 25">
 
 <nav id="pagination" >
     
-    <a href="/2014/10/31/mysql乱码/" class="alignleft prev" >上一页</a>
     
-    
-    <a href="/2014/10/30/vim的使用/" class="alignright next" >下一页</a>
+    <a href="/2014/10/31/add-route/" class="alignright next" >下一页</a>
     
     <div class="clearfix"></div>
 </nav>
