@@ -62,152 +62,277 @@
 
 
   
-  
-    
-    
-      
-      
-      <section class="archives-wrapper">
-        
-        <div class="archives">
-    
     <article class="post">
   <header>
-    <a href="/2014/10/31/tail-wc-head使用/">
+    
+      <div class="icon"></div>
+      <a href="/2014/10/31/tail-wc-head使用/">
   <time datetime="2014-10-31T11:28:05.000Z">
-    10月 31
+    10月 31 2014
   </time>
 </a>
+    
     
   
     <h1 class="title"><a href="/2014/10/31/tail-wc-head使用/">tail-wc-head使用</a></h1>
   
 
   </header>
-</article>
   
+  <div class="entry">
     
+      <h3 id="wc使用">wc使用</h3>
+<ul>
+<li>wc -c filename #显示一个文件的字节数</li>
+<li>wc -m filename #显示一个文件的字符数</li>
+<li>wc -l filename #显示一个文件的行数</li>
+<li>wc -L filename #显示一个文件中最长行的长度</li>
+<li>wc -w filename #显示一个文件了字数</li>
+<li>wc -lcw file1 file2 #组合使用</li>
+</ul>
+<h3 id="head使用">head使用</h3>
+<ul>
+<li>head -n 5 filename #显示文件前5行</li>
+<li>head -c 20 filename #显示文件的前n个字节</li>
+<li>head -c -32 filename #显示文件除了最后n个字节以外的内容</li>
+<li>head -n -6 filename #输出文件除了最后n行的全部内容</li>
+</ul>
+<h3 id="tail使用">tail使用</h3>
+<ul>
+<li>tail -n 5 filename #显示文件末尾5行内容</li>
+<li>tail -f filename #循环查看文件内容</li>
+<li>tail -n +5 filename #从第5行开始显示文件</li>
+</ul>
+
     
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+
+  
     <article class="post">
   <header>
-    <a href="/2014/10/31/mysql乱码/">
+    
+      <div class="icon"></div>
+      <a href="/2014/10/31/mysql乱码/">
   <time datetime="2014-10-31T07:32:30.000Z">
-    10月 31
+    10月 31 2014
   </time>
 </a>
+    
     
   
     <h1 class="title"><a href="/2014/10/31/mysql乱码/">mysql乱码</a></h1>
   
 
   </header>
-</article>
   
+  <div class="entry">
     
+      <p>打开终端登陆到服务器，登陆mysql数据库,查询数据总是乱码，一开始觉得是终端编码设置有问题，没放在心上，后来网上搜了些东西，原来mysql也可以设置编码格式输出的</p>
+<p>mysql输出乱码命令：</p>
+<blockquote>
+<p>mysql&gt; set names ‘gbk’;如果不行则可能用 set names ‘utf8’;</p>
+</blockquote>
+<p>php输出乱码命令</p>
+<blockquote>
+<p>mysql_query(“set name ‘gbk’”);</p>
+</blockquote>
+<p>phpmyadmin里乱码</p>
+<blockquote>
+<p>phpMyAdmin的config.inc.php中有没有设置$cfg[‘DefaultCharset’]=’utf-8’;</p>
+</blockquote>
+
     
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+
+  
     <article class="post">
   <header>
-    <a href="/2014/10/31/add-route/">
+    
+      <div class="icon"></div>
+      <a href="/2014/10/31/add-route/">
   <time datetime="2014-10-31T01:08:24.000Z">
-    10月 31
+    10月 31 2014
   </time>
 </a>
+    
     
   
     <h1 class="title"><a href="/2014/10/31/add-route/">添加路由</a></h1>
   
 
   </header>
-</article>
   
+  <div class="entry">
     
+      <h3 id="添加路由的方法">添加路由的方法</h3>
+<ul>
+<li>sudo route add -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2<ul>
+<li>10.28.131.0 #表示destiny路由网段</li>
+<li>255.255.255.0 #表示掩码</li>
+<li>gw #网关</li>
+<li>10.61.2.2 #网关地址</li>
+</ul>
+</li>
+</ul>
+<h3 id="删除路由的方法">删除路由的方法</h3>
+<ul>
+<li>sudo route del -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2<ul>
+<li>用法类似添加路由</li>
+</ul>
+</li>
+</ul>
+
     
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+
+  
     <article class="post">
   <header>
-    <a href="/2014/10/30/vim的使用/">
+    
+      <div class="icon"></div>
+      <a href="/2014/10/30/vim的使用/">
   <time datetime="2014-10-30T11:33:08.000Z">
-    10月 30
+    10月 30 2014
   </time>
 </a>
+    
     
   
     <h1 class="title"><a href="/2014/10/30/vim的使用/">vim的使用</a></h1>
   
 
   </header>
-</article>
   
+  <div class="entry">
     
+      <h3 id="批量替换">批量替换</h3>
+<blockquote>
+<p>： %s /10.61.13.25/eth0/g #全局替换<br> ：s/10.61.13.25/eth0/g #当前行替换<br> ： 1,15 s/10.61.13.25/eth0/g #1-15替换<br> visual模式选择你要替换的部分 s/10.61.13.25/eth0/g</p>
+</blockquote>
+<h3 id="vim其它常用操作">vim其它常用操作</h3>
+<ul>
+<li>删除命令<ul>
+<li>d0 #删至行首</li>
+<li>d$ #删至行尾</li>
+<li>ndd #删除当前行及后n-1行</li>
+<li>x或X #删除一个字符，x删除光标后的，而X删除光标前的</li>
+<li>dd #删除当前行</li>
+</ul>
+</li>
+<li>移动光标命令<ul>
+<li>） #光标移至句尾</li>
+<li>（ #光标移至名首</li>
+<li>} #光标移至段落开头</li>
+<li>{ #光标移到段落结尾</li>
+<li>nG # 光标移至第n行首</li>
+<li>n+ #光标下移n行</li>
+<li>n- #光标上移n行</li>
+<li>n$ #光标移至第n行尾</li>
+<li>H  #光标移到屏幕顶行</li>
+<li>M #光标移至屏幕中间行</li>
+<li>L #光标移到屏幕最后行</li>
+<li>0 #光标移至当前行首</li>
+<li>$ #光标移至当前行尾</li>
+</ul>
+</li>
+</ul>
+
     
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+
+  
     <article class="post">
   <header>
-    <a href="/2014/10/29/php-session理解/">
+    
+      <div class="icon"></div>
+      <a href="/2014/10/29/php-session理解/">
   <time datetime="2014-10-29T09:02:11.000Z">
-    10月 29
+    10月 29 2014
   </time>
 </a>
+    
     
   
     <h1 class="title"><a href="/2014/10/29/php-session理解/">session,cookie的区别</a></h1>
   
 
   </header>
+  
+  <div class="entry">
+    
+      <h3 id="存储位置不同">存储位置不同</h3>
+<ul>
+<li>session是存储在服务器的</li>
+<li>cookie是存储在客户端的</li>
+</ul>
+<h3 id="原理不同">原理不同</h3>
+<ul>
+<li>cookie机制采用的是在客户端保持状态的方案，它是在用户端的会话状态的存贮机制，他需要用户打开客户端的cookie支持，cookie的作用就是为了解决http协议无状态的缺陷所作的努力。</li>
+<li>session是针对每一个用户的，变量的值保存在服务器上，用一个sessionID来区分是哪个用户session变量，这个值是通过用户的浏览器在访问的时候返回给服务器，当客户禁用cookie时，这个值也可能设置为由get来返回给服务器</li>
+</ul>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
 </article>
-  
-    
-    
-    <article class="post">
-  <header>
-    <a href="/2014/10/29/git使用/">
-  <time datetime="2014-10-29T08:38:41.000Z">
-    10月 29
-  </time>
-</a>
-    
-  
-    <h1 class="title"><a href="/2014/10/29/git使用/">git使用</a></h1>
+
+
+
   
 
-  </header>
-</article>
-  
-    
-    
-    <article class="post">
-  <header>
-    <a href="/2014/10/28/hexo1/">
-  <time datetime="2014-10-28T05:32:20.000Z">
-    10月 28
-  </time>
-</a>
-    
-  
-    <h1 class="title"><a href="/2014/10/28/hexo1/">Hexo常用命令</a></h1>
-  
-
-  </header>
-</article>
-  
-    
-    
-    <article class="post">
-  <header>
-    <a href="/2014/10/27/blog/">
-  <time datetime="2014-10-27T05:16:52.000Z">
-    10月 27
-  </time>
-</a>
-    
-  
-    <h1 class="title"><a href="/2014/10/27/blog/">Hexo简介</a></h1>
-  
-
-  </header>
-</article>
+  <nav id="pagination">
   
   
-    </div></section>
+    <a href="/archives/2014/page/2/" class="next">下一页</a>
   
+  <div class="clearfix"></div>
+</nav>
 
 </div>
   </div>

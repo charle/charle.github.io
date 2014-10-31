@@ -62,33 +62,59 @@
 
 
   
-  
-    
-    
-      
-      
-      <section class="archives-wrapper">
-        
-        <div class="archives">
-    
     <article class="post">
   <header>
-    <a href="/2014/10/31/mysql乱码/">
+    
+      <div class="icon"></div>
+      <a href="/2014/10/31/mysql乱码/">
   <time datetime="2014-10-31T07:32:30.000Z">
-    10月 31
+    10月 31 2014
   </time>
 </a>
+    
     
   
     <h1 class="title"><a href="/2014/10/31/mysql乱码/">mysql乱码</a></h1>
   
 
   </header>
+  
+  <div class="entry">
+    
+      <p>打开终端登陆到服务器，登陆mysql数据库,查询数据总是乱码，一开始觉得是终端编码设置有问题，没放在心上，后来网上搜了些东西，原来mysql也可以设置编码格式输出的</p>
+<p>mysql输出乱码命令：</p>
+<blockquote>
+<p>mysql&gt; set names ‘gbk’;如果不行则可能用 set names ‘utf8’;</p>
+</blockquote>
+<p>php输出乱码命令</p>
+<blockquote>
+<p>mysql_query(“set name ‘gbk’”);</p>
+</blockquote>
+<p>phpmyadmin里乱码</p>
+<blockquote>
+<p>phpMyAdmin的config.inc.php中有没有设置$cfg[‘DefaultCharset’]=’utf-8’;</p>
+</blockquote>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
 </article>
+
+
+
+  
+
+  <nav id="pagination">
   
   
-    </div></section>
-  
+  <div class="clearfix"></div>
+</nav>
 
 </div>
   </div>
