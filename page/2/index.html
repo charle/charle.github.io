@@ -65,6 +65,122 @@
   <header>
     
       <div class="icon"></div>
+      <a href="/2014/10/31/add-route/">
+  <time datetime="2014-10-31T01:08:24.000Z">
+    10月 31 2014
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2014/10/31/add-route/">添加路由</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h3 id="添加路由的方法">添加路由的方法</h3>
+<ul>
+<li>sudo route add -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2<ul>
+<li>10.28.131.0 #表示destiny路由网段</li>
+<li>255.255.255.0 #表示掩码</li>
+<li>gw #网关</li>
+<li>10.61.2.2 #网关地址</li>
+</ul>
+</li>
+</ul>
+<h3 id="删除路由的方法">删除路由的方法</h3>
+<ul>
+<li>sudo route del -net 10.28.131.0 netmask 255.255.255.0 gw 10.61.2.2<ul>
+<li>用法类似添加路由</li>
+</ul>
+</li>
+</ul>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2014/10/30/vim的使用/">
+  <time datetime="2014-10-30T11:33:08.000Z">
+    10月 30 2014
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2014/10/30/vim的使用/">vim的使用</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h3 id="批量替换">批量替换</h3>
+<blockquote>
+<p>： %s /10.61.13.25/eth0/g #全局替换<br> ：s/10.61.13.25/eth0/g #当前行替换<br> ： 1,15 s/10.61.13.25/eth0/g #1-15替换<br> visual模式选择你要替换的部分 s/10.61.13.25/eth0/g</p>
+</blockquote>
+<h3 id="vim其它常用操作">vim其它常用操作</h3>
+<ul>
+<li><p>删除命令</p>
+<ul>
+<li>d0 #删至行首</li>
+<li>d$ #删至行尾</li>
+<li>ndd #删除当前行及后n-1行</li>
+<li>x或X #删除一个字符，x删除光标后的，而X删除光标前的</li>
+<li>dd #删除当前行</li>
+</ul>
+</li>
+<li><p>移动光标命令</p>
+<ul>
+<li>） #光标移至句尾</li>
+<li>（ #光标移至名首</li>
+<li>} #光标移至段落开头</li>
+<li>{ #光标移到段落结尾</li>
+<li>nG # 光标移至第n行首</li>
+<li>n+ #光标下移n行</li>
+<li>n- #光标上移n行</li>
+<li>n$ #光标移至第n行尾</li>
+<li>H  #光标移到屏幕顶行</li>
+<li>M #光标移至屏幕中间行</li>
+<li>L #光标移到屏幕最后行</li>
+<li>0 #光标移至当前行首</li>
+<li>$ #光标移至当前行尾</li>
+</ul>
+</li>
+</ul>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
       <a href="/2014/10/29/php-session理解/">
   <time datetime="2014-10-29T09:02:11.000Z">
     10月 29 2014
@@ -206,55 +322,13 @@
 
 
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/10/27/blog/">
-  <time datetime="2014-10-27T05:16:52.000Z">
-    10月 27 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/10/27/blog/">Hexo简介</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>你可能需要一个方便的工具来记录思想、整理笔记、表述观点，并且传播给更多的人。Hexo就是一个不错的工具。<br>Hexo,是一个基于Node.js的静态博客程序，可以方便的生成静态网页托管在github和Heroku上。<br>引用官方的话，hexo：</p>
-<blockquote>
-<p>快速、简单且功能强大的 Node.js 博客框架。<br>A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
-</blockquote>
-<p>我们可以用hexo创建自己的博客，托管到github或Heroku上，绑定自己的域名，用markdown写文章。本博客即使用hexo创建并托管在github上。</p>
-<h2 id="为什么要用Hexo">为什么要用Hexo</h2>
-<blockquote>
-<p> 不可思议的快速 ─ 只要一眨眼静态文件即生成完成<br>支持 Markdown<br>仅需一道指令即可部署到 GitHub Pages 和 Heroku<br>已移植 Octopress 插件<br>高扩展性、自订性<br>兼容于 Windows, Mac &amp; Linux</p>
-</blockquote>
-<h2 id="谁能使用Hexo">谁能使用Hexo</h2>
-<p>这是一个免费开源的博客程序，任何人都可以使用和修改。但是不同于wordpress，hexo由于需要使用Github,Git,Markdown,Node.js这样的工具，好多插件、widget都需要自己安装、设置。所以适合那些有一定计算机基础，喜欢折腾的人。但是，不要担心，只要跟着本教程走，就能很方便地让你熟练的使用起来。</p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
 
   <nav id="pagination">
   
     <a href="/" class="prev">上一页</a>
   
+  
+    <a href="/page/3/" class="next">下一页</a>
   
   <div class="clearfix"></div>
 </nav>

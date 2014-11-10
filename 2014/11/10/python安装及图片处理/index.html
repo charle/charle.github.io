@@ -4,21 +4,65 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
-  <title>Charle-Chen的博客</title>
+  <title>ubuntu python PIL安装及图片处理 | Charle-Chen的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
     <meta name="author" content="Charle-Chen">
   
   
-  <meta name="description" content="Charle-Chen's blog |java |php | python|">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Charle-Chen的博客">
-<meta property="og:url" content="http://yoursite.com/">
+    <meta name="description" content="python PIL安装
+
+下载PIL的Source Kit（因为这个包支持全部平台） Imaging—1.1.6.tar.gz
+链接
+
+
+解压缩包 tar -zxvf Imaging-1.1.7.tar.gz
+进入到解压后的目录 cd Imaging-1.1.7
+生成动态链接库 python setup.py build_ext -i
+测试;  python selftest.py
+安装 pyt">
+  
+  <meta name="description" content="python PIL安装
+
+下载PIL的Source Kit（因为这个包支持全部平台） Imaging—1.1.6.tar.gz
+链接
+
+
+解压缩包 tar -zxvf Imaging-1.1.7.tar.gz
+进入到解压后的目录 cd Imaging-1.1.7
+生成动态链接库 python setup.py build_ext -i
+测试;  python selftest.py
+安装 pyt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu python PIL安装及图片处理">
+<meta property="og:url" content="http://yoursite.com/2014/11/10/python安装及图片处理/">
 <meta property="og:site_name" content="Charle-Chen的博客">
-<meta property="og:description" content="Charle-Chen's blog |java |php | python|">
+<meta property="og:description" content="python PIL安装
+
+下载PIL的Source Kit（因为这个包支持全部平台） Imaging—1.1.6.tar.gz
+链接
+
+
+解压缩包 tar -zxvf Imaging-1.1.7.tar.gz
+进入到解压后的目录 cd Imaging-1.1.7
+生成动态链接库 python setup.py build_ext -i
+测试;  python selftest.py
+安装 pyt">
+<meta property="og:image" content="http://ww2.sinaimg.cn/mw690/6cfa0927gw1em65dcjqgkj20hs0eq0sz.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/mw690/6cfa0927gw1em65d8wervj20hs0eqab3.jpg">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Charle-Chen的博客">
-<meta name="twitter:description" content="Charle-Chen's blog |java |php | python|">
+<meta name="twitter:title" content="ubuntu python PIL安装及图片处理">
+<meta name="twitter:description" content="python PIL安装
+
+下载PIL的Source Kit（因为这个包支持全部平台） Imaging—1.1.6.tar.gz
+链接
+
+
+解压缩包 tar -zxvf Imaging-1.1.7.tar.gz
+进入到解压后的目录 cd Imaging-1.1.7
+生成动态链接库 python setup.py build_ext -i
+测试;  python selftest.py
+安装 pyt">
 
   
   
@@ -55,13 +99,7 @@
   <div class="clearfix"></div>
 </header>
 
-    <div class="content">
-
-
-
-
-  
-    <article class="post">
+    <div class="content"><article class="post">
   <header>
     
       <div class="icon"></div>
@@ -73,7 +111,7 @@
     
     
   
-    <h1 class="title"><a href="/2014/11/10/python安装及图片处理/">ubuntu python PIL安装及图片处理</a></h1>
+    <h1 class="title">ubuntu python PIL安装及图片处理</h1>
   
 
   </header>
@@ -116,225 +154,22 @@
 
     
   </div>
-  <footer class="end-sep">
+  <footer>
     
       
+  <div class="categories">
+    <a class="categories-link" href="/categories/python/">python</a>
+  </div>
+
       
+  <div class="tags">
+    <a class="tags-link" href="/tags/图像处理/">图像处理</a>
+  </div>
+
     
     <div class="clearfix"></div>
   </footer>
 </article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/11/09/git学习/">
-  <time datetime="2014-11-09T03:13:50.000Z">
-    11月 9 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/11/09/git学习/">git学习</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <h3 id="git正常的工作流程">git正常的工作流程</h3>
-<ul>
-<li>git add file1 file2 file3 #修改文件,将它们更新的内容添加到索引中</li>
-<li>git status #获得当前项目的一个状况</li>
-<li>git commit #如果你要做进一步的修改, 那就继续做, 做完后就把新修改的文件加入到索引中. 最后把他们提交</li>
-<li>git commit -a # 等价于<code>git add</code> + <code>git commit</code></li>
-</ul>
-<h3 id="git跟踪的是内容不是文件">git跟踪的是内容不是文件</h3>
-<ul>
-<li>很多版本控制系统都提供了一个 “add” 命令:告诉系统开始去跟踪某一个文件的改动。但是Git里的 ”add” 命令从某种程度上讲更为简单和强大. git add 不但是用来添加不在版本控制中的新文件,也用于添加已在版本控制中但是刚修改过的文件; 在这两种情况下, Git都会获得当前文件的快照并且把内容暂存(stage)到索引中,为下一次commit做好准备。</li>
-</ul>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="photo">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/11/01/images-test/">
-  <time datetime="2014-10-31T16:29:24.000Z">
-    11月 1 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/11/01/images-test/">images-test</a></h1>
-  
-
-  </header>
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      
-        <img src="http://shopimg.kongfz.com/20130118/1642576/1642576a2a8E0_b.jpg">
-      
-        <img src="http://www.96192.com/uploadfile/batch/201008/2010080901/1/20733456-1_o.jpg">
-      
-        <img src="http://d9.yihaodianimg.com/N02/M09/7E/D9/CgQCsVHeRTGABvOmAACQHFKIIBE83900_600x600.jpg">
-      
-        <img src="http://www.book365.net/uploadfile/batch/201008/2010080901/3/20750208-1_o.jpg">
-      
-        <img src="http://images.99read.com/newProduct/59/600.600/a0000369181.jpg">
-      
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="entry">
-    
-      
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/10/31/tail-wc-head使用/">
-  <time datetime="2014-10-31T11:28:05.000Z">
-    10月 31 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/10/31/tail-wc-head使用/">tail-wc-head使用</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <h3 id="wc使用">wc使用</h3>
-<ul>
-<li>wc -c filename #显示一个文件的字节数</li>
-<li>wc -m filename #显示一个文件的字符数</li>
-<li>wc -l filename #显示一个文件的行数</li>
-<li>wc -L filename #显示一个文件中最长行的长度</li>
-<li>wc -w filename #显示一个文件了字数</li>
-<li>wc -lcw file1 file2 #组合使用</li>
-</ul>
-<h3 id="head使用">head使用</h3>
-<ul>
-<li>head -n 5 filename #显示文件前5行</li>
-<li>head -c 20 filename #显示文件的前n个字节</li>
-<li>head -c -32 filename #显示文件除了最后n个字节以外的内容</li>
-<li>head -n -6 filename #输出文件除了最后n行的全部内容</li>
-</ul>
-<h3 id="tail使用">tail使用</h3>
-<ul>
-<li>tail -n 5 filename #显示文件末尾5行内容</li>
-<li>tail -f filename #循环查看文件内容</li>
-<li>tail -n +5 filename #从第5行开始显示文件</li>
-</ul>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/10/31/mysql乱码/">
-  <time datetime="2014-10-31T07:32:30.000Z">
-    10月 31 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/10/31/mysql乱码/">mysql乱码</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>打开终端登陆到服务器，登陆mysql数据库,查询数据总是乱码，一开始觉得是终端编码设置有问题，没放在心上，后来网上搜了些东西，原来mysql也可以设置编码格式输出的</p>
-<p>mysql输出乱码命令：</p>
-<blockquote>
-<p>mysql&gt; set names ‘gbk’;如果不行则可能用 set names ‘utf8’;</p>
-</blockquote>
-<p>php输出乱码命令</p>
-<blockquote>
-<p>mysql_query(“set name ‘gbk’”);</p>
-</blockquote>
-<p>phpmyadmin里乱码</p>
-<blockquote>
-<p>phpMyAdmin的config.inc.php中有没有设置$cfg[‘DefaultCharset’]=’utf-8’;</p>
-</blockquote>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-
-  <nav id="pagination">
-  
-  
-    <a href="/page/2/" class="next">下一页</a>
-  
-  <div class="clearfix"></div>
-</nav>
 
 </div>
   </div>
